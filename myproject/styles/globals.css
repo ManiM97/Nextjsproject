@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +30,28 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.indexbg{
+  background-image: url('https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?t=st=1718970840~exp=1718974440~hmac=2442484c34c9cb2f5e1ec81e50a7da2920c9a1a4b56b8b66f5b31efa8ef7d8dc&w=900');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.logincon{
+  background-color: transparent;
+  border-color: black;
+  border-radius: 10px;
+  margin-top: 20%;    
+}
+
+.linkbutton{
+  background-color: gray;
+  color: white;
+}
+
+.navbar{
+  background-color: rgb(189, 189, 255);
 }
