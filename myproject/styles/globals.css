@@ -55,3 +55,17 @@
 .navbar{
   background-color: rgb(189, 189, 255);
 }
+
+.employeecon{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.employeelist{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
