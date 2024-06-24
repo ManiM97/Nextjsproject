@@ -19,19 +19,27 @@ const Employee = () => {
 
   return (
     <>
-      <div className="employeecon">Employee</div>
-      <div className="employeelist">
-        {resData &&
-          resData.map((item, index) => {
-            return (
-              <div key={index}>
-                <h1>{item.first_name }</h1>
-                <h2>{item.email}</h2>
-                <a href={item.avatar} target="_blank">{item.avatar}</a>
-                {/* {console.log("object", item.first_name)} */}
-              </div>
-            );
-          })}
+      <div className="employeecon">
+        Employee
+        <div className="employeelist">
+          {resData &&
+            resData.map((item, index) => {
+              return (
+                <div key={index} className="employeecard">
+                  <h1>
+                    Name : <span>{item.first_name}</span>
+                  </h1>
+                  <h2>
+                    Email : <span>{item.email}</span>
+                  </h2>
+                  <a title="Profile Image" href={item.avatar} target="_blank">
+                    Profile : <span>{item.avatar}</span>
+                  </a>
+                  {/* {console.log("object", item.first_name)} */}
+                </div>
+              );
+            })}
+        </div>
       </div>
     </>
   );
